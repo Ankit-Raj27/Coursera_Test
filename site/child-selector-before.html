@@ -1,0 +1,32 @@
+<!DOCTYPE html>	
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<title>Child Selector</title>
+<style type="text/css">
+	/*Any article element which is a direct child of a section element i.e. any article element whose imidiate parent is a section element.*/
+	section > article
+	{
+		color: green;
+		font-size: 24px;
+	}
+	section > h2
+	{
+		color: green;
+	}
+</style>
+</head>
+<body>
+<h1>Child selector</h1>
+<section>
+	<h2>Subheading 1</h2>
+	<div>
+		<article>ARTICLE which inside DIV, which is insider SECTION</article>
+	</div>
+</section>
+<section>
+	<article>ARTiCLE as a direct child of the SECTION element.</article>
+</section>
+<h2>Subheading 2</h2>
+</body>
+</html>

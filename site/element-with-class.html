@@ -1,0 +1,45 @@
+<!DOCTYPE html>	
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<title>Simple Selectors </title>
+<style type="text/css">
+	/*All with class="Highlight*/
+	.Highlight
+	{
+		background-color: green;
+	}
+	#mainPoint
+	{
+		font-size: 24px;
+		font-weight: bold;
+		background-color: red;
+		opacity: .7;
+	}
+
+	/*All p elements with CLASS="Highlight"*/
+	p.Highlight
+	{
+		font-style: italic;
+	}
+
+	/* All elements with CLASS = "Highlight" as well as CLASS="mainpoint" */
+	.Highlight.mainpoint
+	{
+		color: red;
+		background-color: black; 
+	}
+</style>
+</head>
+<body>
+<section id="Section1">
+	<h1 class="Highlight">Element with class Selectors (h1)</h1>
+	<h2>Section 1 (h2)</h2>
+
+	<p class="Highlight">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+	<p class="Highlight"> This is P with CLASS="Highlight"</p>
+</section>
+<div class="mainoint Highlight">This is the main point of the entire article.
+<span id="mainPoint"> Id = mainPoint</span> </div>
+
+</body>
