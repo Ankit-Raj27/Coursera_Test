@@ -104,20 +104,35 @@ body
 	margin-top: -30px;
 }
 
+.container .jumbotron
+{
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
 @media(min-width: 1200px)
 {
-
+	.container .jumbotron
+	{
+		background: url("../images/jumbotron_1200.png");
+		height: 675px;
+	}
 }
 
 @media(min-width: 992px) and (max-width: 1199px)
 {
 	#logo-img
 	{
-		background: url('../images/restaurant-logo_medium.png') no-repeat;
+		background: url('../images/restaurant-logo_medium.png') ;
 		width: 100px;
 		height: 100px;
 		margin: 5px 5px 5px 0;
 		margin-left: -20px;
+	}
+
+	.container .jumbotron
+	{
+		background: url('../images/jumbotron_992.jpg') ;
+		height: 558px;
 	}
 
 	.navbar-brand h1
@@ -128,7 +143,11 @@ body
 }
 @media (min-width: 768px) and (max-width: 991px)
 {
-	
+	.container .jumbotron
+	{
+		background: url("C:/Users/ranki/Coursera_Test/Coursera_Test/Menu/images/jumbotron_768.jpg");
+		height: 558px;
+	}
 }
 @media (max-width: 767px)
 {
@@ -161,5 +180,10 @@ body
 		margin-right: 5px;
 	}
 	
-	
+		.container .jumbotron
+		{
+			margin-top: 30px;
+			padding: 0;
+
+		}
 }
